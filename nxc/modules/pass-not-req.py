@@ -1,4 +1,3 @@
-#### Need to test in actual environment where this is present!!!!!
 
 from nxc.helpers.misc import CATEGORY
 from nxc.logger import nxc_logger
@@ -117,5 +116,6 @@ class NXCModule:
             context.log.success(f"Empty-password succeeded for {len(successes)} account(s): {', '.join(successes)}")
         else:
             context.log.fail("No empty-password logins succeeded")
+
 
         return True
